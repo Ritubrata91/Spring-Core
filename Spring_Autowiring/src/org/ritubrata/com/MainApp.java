@@ -10,8 +10,6 @@ public class MainApp {
 	 * ClassPathXmlApplicationContext("Spring.xml"); Resource leak: 'context' is
 	 * never closed
 	 *
-	 *Author Ritubrata
-	 *
 	 */
 
 	public static void main(final String[] args) {
