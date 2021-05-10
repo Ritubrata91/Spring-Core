@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+    http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">  
+    
+    <bean id= "parenttriangle" class="org.ritubrata.spring.Triangle">
+		<property name= "a" ref="first" />
+    </bean>
+ 	
+	<bean id= "triangle1" class="org.ritubrata.spring.Triangle" parent="parenttriangle">
+		<property name= "a" ref="first" />
+		<property name="b" ref="second" />	
+		<property name="c" ref="third" />	
+	</bean>
+	
+	<bean id= "triangle2" class="org.ritubrata.spring.Triangle" parent="triangle1">
+		<property name="b" ref="fourth" />	
+	</bean>
+	
+	<bean id= "first" class="org.ritubrata.spring.Point" >
+		<property name= "x" value="0" />
+		<property name="y" value= "0" />			
+	</bean>
+	
+	<bean id= "second" class="org.ritubrata.spring.Point" >
+		<property name= "x" value="10" />
+		<property name="y" value= "0" />			
+	</bean>
+	
+	<bean id= "third" class="org.ritubrata.spring.Point" >
+		<property name= "x" value="0" />
+		<property name="y" value= "-10" />			
+	</bean>
+	
+	<bean id= "fourth" class="org.ritubrata.spring.Point" >
+		<property name= "x" value="15" />
+		<property name="y" value= "-15" />			
+	</bean>
+	
+	
+</beans>
+
+
+
