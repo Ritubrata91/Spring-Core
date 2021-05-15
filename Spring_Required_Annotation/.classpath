@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SpringLib"/>
 	<classpathentry kind="lib" path="E:/Jar/spring-framework-5.0.4.RELEASE/libs/spring-aop-5.0.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="E:/Jar/spring-framework-5.0.4.RELEASE/libs/spring-aop-5.0.4.RELEASE-javadoc.jar"/>
@@ -66,5 +65,6 @@
 	<classpathentry kind="lib" path="E:/Jar/spring-framework-5.0.4.RELEASE/libs/spring-websocket-5.0.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="E:/Jar/spring-framework-5.0.4.RELEASE/libs/spring-websocket-5.0.4.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="E:/Jar/spring-framework-5.0.4.RELEASE/libs/spring-websocket-5.0.4.RELEASE-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

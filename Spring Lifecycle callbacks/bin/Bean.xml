@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context = "http://www.springframework.org/schema/context"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+
+   <context:annotation-config/>
+
+   <bean id = "triangle" class = "org.ritubrata.com.Triangle" autowire="byName" init-method="abc" destroy-method="def">   		
+   </bean>
+   
+    <bean id = "pointA" class = "org.ritubrata.com.Point" >   	
+    	<property name="x" value = "5"></property>
+    	<property name="y" value = "0"></property>	
+   </bean>
+   
+   <bean id = "pointB" class = "org.ritubrata.com.Point"  >   	
+    	<property name="x" value = "0"></property>
+    	<property name="y" value = "20"></property>	
+   </bean>
+   
+   <bean id = "pointC" class = "org.ritubrata.com.Point" >   	
+    	<property name="x" value = "20"></property>
+    	<property name="y" value = "0"></property>	
+   </bean>
+
+   </beans>
